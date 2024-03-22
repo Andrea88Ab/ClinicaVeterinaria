@@ -1,0 +1,42 @@
+﻿@model List <ClinicaVeterinaria.Models.Visite>
+
+@{ 
+    ViewBag.Title = "Index";
+}
+
+<style>
+    h2,th,td{
+        color: rgb(4, 116, 124);
+    }
+</style>
+
+<h2 class="text-center">Visite</h2>
+
+
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Animale</th>
+                <th>Data Visita</th>
+                <th>Esame Obiettivo</th>
+                <th>Cura Prescritta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var visita in Model)
+            {
+                <tr>
+                    <td>@visita.ID</td>
+                    <td>@visita.IDAnimale</td>
+                    <td>@visita.DataVisita.ToShortDateString()</td>
+                    <td>@visita.EsameObiettivo</td>
+                    <td>@visita.CuraPrescritta</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Registra", "Visite")" class="btn btn-custom">Aggiungi Visita</a>
+</div>

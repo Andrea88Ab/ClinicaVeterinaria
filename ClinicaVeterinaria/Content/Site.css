@@ -1,0 +1,56 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.font {
+    font-size: 1.3em;
+}
+
+.custom1 {
+    background-color: rgb(4,116,124);
+    color: white;
+}
+.text-custom {
+    color: rgb(4,116,124);
+}
+
+.btn-custom, btn-default {
+    background-color: rgb(4, 116, 124);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-custom:hover {
+        background-color: white;
+        color: rgb(4, 116, 124);
+    }
+
+.btn-default:hover {
+    background-color: white;
+    color: rgb(4, 116, 124);
+}
+
+.custom-link {
+    color: rgb(4, 116, 124);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+    .custom-link:hover {
+        color: black;
+    }
+
+
